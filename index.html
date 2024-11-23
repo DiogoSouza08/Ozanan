@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <title>Casa Ozanan</title>
+</head>
+<body>
+  <div class="video-bg">
+    <video width="320" height="240" autoplay loop muted>
+     <source src="https://assets.codepen.io/3364143/7btrrd.mp4" type="video/mp4">
+   Your browser does not support the video tag.
+   </video>
+   </div>
+    <div class="container-logo-ozanan">
+    <img src="./Imagens/logo_ozanan.png" alt="" class="logo_tela_login">
+    </div>
+  <h1 class="animate__animated animate__bounce">Bem-vindo ao Sistema da casa Ozanan</h1>
+
+  <div class="container">
+    <button onclick="mostrarCadastroForm()">Cadastro</button >
+    <button onclick="mostrarLoginForm()">Login</button>
+  </div>
+
+  <div class="form-container" id="cadastroFormContainer">
+    <h2>Cadastro</h2>
+    <form id="cadastroForm">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+      <br>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+      <br>
+
+      <input type="submit" value="Cadastrar">
+    </form>
+  </div>
+
+  <div class="form-container" id="loginFormContainer">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="emailLogin">E-mail:</label>
+      <input type="email" id="emailLogin" name="emailLogin" required>
+      <br>
+
+      <label for="senhaLogin">Senha:</label>
+      <input type="password" id="senhaLogin" name="senhaLogin" required>
+      <br>
+
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
+  <div id="welcomeMessage" style="display: none;">
+    <div class="welcome-container">
+      <img src="./Imagens/logo_ozanan.png" alt="" class="logo-after-register">
+    <h2>Bem-vindo(a)!</h2>
+    <p id="welcomeUsername"></p>
+    <div class="msg-boas-vindas-container">
+    <p class="msg-boas-vindas">É com grande satisfação que damos as boas-vindas a você ao nosso Sistema de Gerenciamento da Casa Ozanan! Seu cadastro foi concluído com sucesso, e agora você faz parte da nossa comunidade dedicada a proporcionar cuidados excepcionais aos idosos. </p>
+  </div>
+  <a href="./Tela Gerenciamento - Casa Ozanan/index.html"><button class="content-button">Iniciar</button></a>
+
+  </div>
+  </div>
+
+    <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous">
+    </script>
+
+    
+</body>
+</html>

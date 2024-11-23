@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+  
+  body {
+      
+      margin: 0;
+      padding: 0;
+      background-image: url(https://wallpapershome.com/images/wallpapers/macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg);
+      background-size: cover;
+      background-position: center; 
+      width: 100%;
+      height: 100vh;
+      background-repeat: no-repeat;
+      @media screen and (max-width: 480px) {
+        padding: 0.8em;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      margin-top: 30px;
+      width: 22%;
+      justify-content: space-around;
+      display: flex;
+      
+    }
+
+    .container button {
+    border: none;
+    width: auto;
+    font-size: 1.3vw;
+    color: #fff;
+    cursor: pointer;
+    height: auto;
+    padding: 2.5% 30px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #860000, rgb(80, 10, 10), #191de8, #302cff);
+    }
+
+    .form-container {
+      display: none;
+      
+      h2{
+        color: #fff;
+        padding-left: 1%;
+      }
+    }
+
+    form {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    form input[type="submit"] {
+      border: none;
+    width: auto;
+    font-size: 1.3vw;
+    color: #fff;
+    cursor: pointer;
+    height: auto;
+    padding: 0.5% 30px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #860000, rgb(80, 10, 10), #191de8, #302cff);
+    }
+
+    .container-logo-ozanan{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding-top: 12%;
+
+        .logo_tela_login{
+            width: 40%;
+        }
+    }
+
+    .video-bg {
+      position: fixed;
+      z-index: -1;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      video {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+      }
+     }
+     
+     #welcomeMessage{
+      color: #fff;
+    }
+    
+    .welcome-container{
+      background-image: url(./Imagens/fundo-after-registe.webp);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      display: flex;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      flex-direction: column;
+      background-size: 100%;
+
+      h2{
+        font-size: 3.5vw;
+      }
+
+      p{
+        font-size: 2.2vw;
+      }
+
+
+      .logo-after-register{
+        width: 19%;
+        padding: 1.8%;
+      }
+
+      .msg-boas-vindas-container{
+        display: flex;
+        width: 30%;
+        text-align: justify;
+        
+        .msg-boas-vindas{
+          font-size: 1.2vw;
+        }
+      }
+
+      .content-button {
+        background-color: rgb(92, 10, 10);
+        border: none;
+        padding: 8px 46px;
+        color: #fff;
+        border-radius: 20px;
+        margin-top: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        white-space: nowrap;
+       }
+      
+    }
+   
+    

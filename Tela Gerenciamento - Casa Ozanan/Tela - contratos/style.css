@@ -1,0 +1,202 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #24292e;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  color: inherit;
+  text-align: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.upload {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: #ccc;
+  background: #2f363d;
+}
+.upload-header {
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  background: #455a64;
+}
+.upload-header > h3 {
+  margin: 0.5rem;
+}
+.upload-main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1rem;
+}
+.upload-drop {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 2.5rem;
+  border: 1px dashed;
+  border-radius: 0.25rem;
+}
+.upload-drop > .icon {
+  width: 4rem;
+  height: 4rem;
+}
+.upload-drop.active:hover {
+  color: white;
+  background-color: #3a434b;
+}
+.upload-progress {
+  width: var(--progress, 0%);
+  height: 0.25rem;
+  background: currentcolor;
+}
+.upload-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+.active .upload-input {
+  cursor: pointer;
+}
+.upload-button {
+  height: 2.5rem;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  border: 1px solid;
+  border-radius: 0.25rem;
+}
+.upload-button:hover {
+  background-color: #3a434b;
+}
+.upload-button:focus {
+  background-color: #45505a;
+}
+.upload-button:active {
+  color: white;
+}
+
+.uploading-icon {
+  animation: spin 1.5s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0) scaleX(-1);
+  }
+  to {
+    transform: rotate(360deg) scaleX(-1);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.color {
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.video-bg {
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-bg video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+select {
+  font-size: 24px;
+  padding: 8px 164px 8px 16px;
+  cursor: pointer;
+  background-color: #2f363d;
+  color: #ffffff;
+  border: none;
+  border-radius: 4PX;
+  /* спрятать стрелку дефолтную	 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* картинку на фон */
+  background-image: url(https://image.flaticon.com/icons/svg/36/36657.svg);
+  /* запрешаем повторение фона */
+  background-repeat: no-repeat;
+  /* размер фона */
+  background-size: 16px;
+  /* позиционируем фон 95% по X и 50% по Y */
+  background-position: 95% 50%;
+}
+
+.container {
+  padding-bottom: 5%;
+}
+
+.title {
+  color: #fff;
+  font-size: 4vw;
+  padding-bottom: 3%;
+}
+
+.icon-container {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  top: 0;
+  padding: 1.4%;
+  justify-content: start;
+  position: absolute;
+}/*# sourceMappingURL=style.css.map */

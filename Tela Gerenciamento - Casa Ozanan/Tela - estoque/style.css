@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  text-align: center;
+  color: #fff;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 400px;
+  background-size: 100%;
+  background-position: center;
+  background-image: url(https://wallpapershome.com/images/wallpapers/macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg);
+  font-family: "Poppins", sans-serif;
+  background-repeat: no-repeat;
+}
+body H1 {
+  margin-top: 3%;
+}
+
+.pierre-logo {
+  width: 80px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.video-bg {
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-bg video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+table {
+  margin: 10px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 2px solid rgb(114, 114, 114);
+  border-collapse: collapse;
+}
+
+th,
+tr,
+td {
+  margin: 10px;
+  border: 1px solid #111111;
+  margin-top: -1px;
+  background-color: #404040;
+  padding: 12px;
+}
+
+.afasta {
+  width: 20em;
+}
+
+.button {
+  margin: 15px;
+  display: inline-block;
+  padding: 10px 18px;
+  font-size: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-image: linear-gradient(to right, #860000, rgb(80, 10, 10));
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 3px rgb(95, 95, 95);
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px rgb(56, 56, 56);
+  transform: translateY(2px);
+}
+
+.caixas {
+  margin-left: 1%;
+  display: inline-block;
+  padding: 10px 18px;
+  font-size: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-image: linear-gradient(to right, #860000, rgb(80, 10, 10));
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 3px rgb(95, 95, 95);
+}
+
+.caixas:hover {
+  background-color: #3e8e41;
+}
+
+.caixas:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px rgb(56, 56, 56);
+  transform: translateY(2px);
+}
+
+.unidades {
+  margin-left: 1%;
+  display: inline-block;
+  padding: 10px 18px;
+  font-size: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-image: linear-gradient(to right, #860000, rgb(80, 10, 10));
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 3px rgb(95, 95, 95);
+}
+
+.unidades:hover {
+  background-color: #3e8e41;
+}
+
+.unidades:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px rgb(56, 56, 56);
+  transform: translateY(2px);
+}
+
+.retiradas {
+  margin-left: 1%;
+  display: inline-block;
+  padding: 10px 18px;
+  font-size: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-image: linear-gradient(to right, #860000, rgb(80, 10, 10));
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 3px rgb(95, 95, 95);
+}
+
+.retiradas:hover {
+  background-color: #3e8e41;
+}
+
+.retiradas:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px rgb(56, 56, 56);
+  transform: translateY(2px);
+}
+
+.limpar {
+  margin-left: 1%;
+  display: inline-block;
+  padding: 10px 18px;
+  font-size: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-image: linear-gradient(to right, #860000, rgb(80, 10, 10));
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 3px rgb(95, 95, 95);
+}
+
+.limpar:hover {
+  background-color: #3e8e41;
+}
+
+.limpar:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px rgb(56, 56, 56);
+  transform: translateY(2px);
+}
+
+.tabelaFruta {
+  margin: 10px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#adicionar,
+#quantidadePorCaixas {
+  color: #111111;
+}
+
+.icon-container {
+  width: 88%;
+  display: flex;
+  align-items: start;
+  top: 0;
+  margin: 0;
+  left: -3px;
+  padding: 1.4%;
+  justify-content: start;
+  z-index: 999;
+  position: absolute;
+}/*# sourceMappingURL=style.css.map */
